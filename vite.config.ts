@@ -3,12 +3,18 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
+// GitHub Pages base path. Set BASE_URL env var when deploying to a
+// user/organization site (e.g. kernelshellfail.github.io) — defaults to '/'
+// for repo sites (https://kernelshellfail.github.io/<repo>/).
+const base = process.env.BASE_URL || '/';
+
 export default defineConfig(() => {
   return {
+    base,
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, '.'),
+        '@': path.resolve(import.meta.dirname, '.'),
       },
     },
     server: {

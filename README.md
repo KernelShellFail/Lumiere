@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+## Deploy to GitHub Pages
 
-# Run and deploy your AI Studio app
+This site is configured for deployment to GitHub Pages via GitHub Actions.
 
-This contains everything you need to run your app locally.
+### Option 1: Automatic (GitHub Actions)
 
-View your app in AI Studio: https://ai.studio/apps/1f55e24f-25ff-4fd0-97a8-b9d21977daa8
+1. Push your code to a repository owned by `KernelShellFail` (e.g. `KernelShellFail/lumiere`).
+2. Go to **Settings → Pages** in your repository.
+3. Set **Build and deployment → Source** to **GitHub Actions**.
+4. Push to the `main` branch — the workflow at `.github/workflows/deploy.yml` will build and deploy automatically.
+5. Your site will be live at `https://kernelshellfail.github.io/lumiere/`.
 
-## Run Locally
+The workflow sets `BASE_URL=/lumiere/`. If you deploy to a user/organization site
+(`kernelshellfail.github.io` directly), change the `BASE_URL` env var in the
+workflow to `/`.
 
-**Prerequisites:**  Node.js
+### Option 2: Manual
 
+```bash
+npm run build
+npx gh-pages -d dist
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+### Personalization
+
+- **Owner:** basiturraza taji
+- **Instagram:** [@briixiio](https://instagram.com/briixiio)
+- **GitHub:** [KernelShellFail](https://github.com/KernelShellFail)
+- **Brand:** Lumière (unchanged)

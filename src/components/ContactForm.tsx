@@ -392,7 +392,7 @@ export function ContactForm({
           {/* Tactile Submit Button with AnimatePresence State Morph */}
           <div className="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <p className="text-xs text-neutral-500">
-              Zurich & Kyoto Studio · studio@lumiere-archive.example
+              Basiturraza Taji Studio · studio@lumiere-archive.example
             </p>
 
             <motion.button

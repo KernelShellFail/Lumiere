@@ -31,7 +31,7 @@ export const SERVICE_PACKAGES: ServicePackage[] = [
       'Unhurried, cinema-grade coverage crafted with medium-format digital and 35mm analog film. Designed for destination celebrations and intimate architectural venues.',
     included: [
       '10 hours continuous coverage across ceremony & reception',
-      'Lead photographer Julian Vance plus second documentary shooter',
+      'Lead photographer Basiturraza Taji plus second documentary shooter',
       'Curated online archival gallery of 600+ color-graded plates',
       'Hand-bound linen proof book & 40 medium-format film frames',
     ],

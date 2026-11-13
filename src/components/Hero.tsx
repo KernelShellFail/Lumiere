@@ -59,7 +59,7 @@ export function Hero() {
           transition={{ type: 'spring', stiffness: 110, damping: 18, delay: 0.1 }}
           className="text-xs md:text-sm font-medium tracking-[0.28em] uppercase mb-5 text-neutral-200"
         >
-          Julian Vance · Monograph 2024—2025
+          Basiturraza Taji · Monograph 2024—2025
         </motion.p>
 
         <motion.h1

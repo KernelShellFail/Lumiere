@@ -33,13 +33,13 @@ const wordVariants = {
 const SOCIAL_LINKS = [
   {
     label: 'Instagram',
-    href: 'https://instagram.com',
+    href: 'https://instagram.com/briixiio',
     icon: Instagram,
   },
   {
-    label: 'Twitter',
-    href: 'https://x.com',
-    icon: Twitter,
+    label: 'GitHub',
+    href: 'https://github.com/KernelShellFail',
+    icon: Globe,
   },
   {
     label: 'Email Studio',
@@ -103,7 +103,7 @@ export function Footer({ onScrollToTop }: FooterProps) {
         {/* Closing Statement */}
         <div className="pb-20 border-b border-neutral-800/80">
           <p className="text-xs tracking-[0.24em] uppercase text-neutral-400 mb-6">
-            Lumière Archive · Julian Vance
+            Lumière Archive · Basiturraza Taji
           </p>
 
           <motion.h2
@@ -158,7 +158,7 @@ export function Footer({ onScrollToTop }: FooterProps) {
 
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
-          <p>© 2025 Lumière Studio · Julian Vance. All rights reserved.</p>
+          <p>© 2025 Lumière Studio · Basiturraza Taji. All rights reserved.</p>
 
           <motion.button
             type="button"

@@ -6,8 +6,8 @@ const PORTRAIT_IMAGE_URL =
   'https://images.unsplash.com/photo-1554048612-b6a482bc67e5?auto=format&fit=crop&w=1000&q=85';
 
 const EDITORIAL_PARAGRAPHS = [
-  'Working predominantly in high-altitude basins and coastal archipelagos, Julian Vance approaches landscape photography as an exercise in patience rather than spectacle. Each frame begins days before a shutter is released—studying topographic light angles, barometric shifts, and the brief threshold when atmospheric haze softens horizon lines.',
-  'Trained originally in architectural drafting in Zurich, his compositions favor disciplined geometry: ridged silhouettes, vertical stands of old-growth cedar, and the quiet tension between shadow density and specular mist. Rather than chasing dramatic storm fronts, the archive concentrates on the suspended stillness that follows weather.',
+  'Working predominantly in high-altitude basins and coastal archipelagos, Basiturraza Taji approaches landscape photography as an exercise in patience rather than spectacle. Each frame begins days before a shutter is released—studying topographic light angles, barometric shifts, and the brief threshold when atmospheric haze softens horizon lines.',
+  'Trained originally in architectural drafting in Zurich, Basiturraza Taji\'s compositions favor disciplined geometry: ridged silhouettes, vertical stands of old-growth cedar, and the quiet tension between shadow density and specular mist. Rather than chasing dramatic storm fronts, the archive concentrates on the suspended stillness that follows weather.',
   'Every plate in this monograph was exposed on medium-format digital backs paired with manual-focus primes. Long tripod exposures allow water, drifting cloud strata, and alpine snowfields to register as unbroken tonal planes without artificial saturation.',
   'Selected editions are archived and hand-printed in Zurich on heavy Hahnemühle cotton rag, preserving subtle shadow transitions for museum collections and private architectural commissions worldwide.',
 ];
@@ -46,17 +46,17 @@ export function AboutSection() {
               {imageError ? (
                 <div
                   role="img"
-                  aria-label="Portrait of photographer Julian Vance"
+                  aria-label="Portrait of photographer Basiturraza Taji"
                   className="w-full h-full bg-gradient-to-br from-neutral-900 via-neutral-950 to-neutral-900 flex flex-col items-center justify-center p-8 text-center"
                 >
                   <Camera className="w-7 h-7 text-neutral-600 mb-3" strokeWidth={1.25} />
-                  <span className="font-serif text-base text-neutral-200">Julian Vance</span>
+                  <span className="font-serif text-base text-neutral-200">Basiturraza Taji</span>
                   <span className="text-xs text-neutral-500 mt-1">Zurich Studio Portrait</span>
                 </div>
               ) : (
                 <img
                   src={PORTRAIT_IMAGE_URL}
-                  alt="Photographer Julian Vance working with a camera in natural studio light"
+                  alt="Photographer Basiturraza Taji working with a camera in natural studio light"
                   referrerPolicy="no-referrer"
                   onError={() => setImageError(true)}
                   className="w-full h-full object-cover"
@@ -66,7 +66,7 @@ export function AboutSection() {
           </div>
 
           <div className="mt-4 flex items-baseline justify-between gap-4 text-xs text-neutral-400">
-            <span>Julian Vance · Zurich & Kyoto</span>
+            <span>Basiturraza Taji · Zurich & Kyoto</span>
             <span className="font-mono text-[11px] text-neutral-500 tabular-nums">
               Medium Format Practice
             </span>

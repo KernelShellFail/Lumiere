@@ -166,7 +166,7 @@ export function EditorialFooter({ prefilledBrief }: EditorialFooterProps) {
       {/* Quiet Footer Copyright */}
       <div className="border-t border-neutral-900">
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-500">
-          <p>© 2025 Lumière Studio · Julian Vance. All rights reserved.</p>
+          <p>© 2025 Lumière Studio · Basiturraza Taji. All rights reserved.</p>
           <TactileButton
             variant="ghost"
             onClick={() => scrollTo('#hero')}
