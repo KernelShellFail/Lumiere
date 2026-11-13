@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_URL: /lumiere/
+          BASE_URL: /Lumiere/
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
