@@ -1,0 +1,6 @@
+{
+  "name": "Lumière — Editorial Photography Portfolio",
+  "description": "Minimalist, editorial photography portfolio featuring parallax hero, 3D tilt masonry gallery, scroll-linked horizontal series, and seamless lightbox morphing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

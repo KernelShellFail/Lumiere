@@ -1,0 +1,80 @@
+/* Mobile-Optimized Responsive Typography, Spacing & Performance Utilities */
+
+.typo-hero {
+  @apply text-4xl sm:text-6xl md:text-8xl lg:text-9xl leading-[1.02] sm:leading-[0.95] tracking-tight;
+}
+
+.typo-section {
+  @apply text-3xl sm:text-4xl md:text-6xl lg:text-7xl leading-[1.12] sm:leading-[1.06] tracking-tight;
+}
+
+.typo-body {
+  @apply text-base sm:text-lg leading-relaxed sm:leading-[1.75];
+}
+
+.section-spacing {
+  @apply py-16 sm:py-24 md:py-32 lg:py-40;
+}
+
+.container-shell {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.pt-safe-top {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+.pb-safe-bottom {
+  padding-bottom: max(1.25rem, env(safe-area-inset-bottom));
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide default cursor only on desktop when custom cursor is mounted */
+@media (pointer: fine) {
+  body.has-custom-cursor,
+  body.has-custom-cursor a,
+  body.has-custom-cursor button,
+  body.has-custom-cursor [role='button'] {
+    cursor: none;
+  }
+}
+
+body.is-touch-device,
+body.is-touch-device * {
+  cursor: auto !important;
+}
+
+/* Reduce expensive GPU backdrop blurs and will-change layers on mobile */
+@media (max-width: 768px) {
+  .mobile-reduce-blur {
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+  }
+
+  .mobile-no-will-change {
+    will-change: auto !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .custom-cursor-dot {
+    display: none !important;
+  }
+}
